@@ -50,7 +50,7 @@ FinTrack/
 
 ### 1. Supabase Setup
 - Create a free project at [supabase.com](https://supabase.com)
-- Go to SQL Editor and run the queries from `backend/supabase_schema.sql`
+- Go to SQL Editor and run the queries 
 - Copy your **Project URL** and **anon key** from Project Settings → API
 
 ---
