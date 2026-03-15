@@ -50,31 +50,7 @@ FinTrack/
 
 ### 1. Supabase Setup
 - Create a free project at [supabase.com](https://supabase.com)
-- Go to SQL Editor and run this:
-```sql
-CREATE TABLE IF NOT EXISTS users (
-  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-  name TEXT NOT NULL,
-  email TEXT UNIQUE NOT NULL,
-  password TEXT NOT NULL,
-  balance NUMERIC(12, 2) DEFAULT 10000.00 NOT NULL,
-  created_at TIMESTAMPTZ DEFAULT NOW()
-);
-
-CREATE TABLE IF NOT EXISTS transactions (
-  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-  sender_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
-  receiver_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
-  amount NUMERIC(12, 2) NOT NULL CHECK (amount > 0),
-  transaction_type TEXT NOT NULL CHECK (transaction_type IN ('credit', 'debit')),
-  balance_after NUMERIC(12, 2) NOT NULL,
-  created_at TIMESTAMPTZ DEFAULT NOW()
-);
-
-ALTER TABLE users DISABLE ROW LEVEL SECURITY;
-ALTER TABLE transactions DISABLE ROW LEVEL SECURITY;
-```
-
+- Go to SQL Editor and run the queries from `backend/supabase_schema.sql`
 - Copy your **Project URL** and **anon key** from Project Settings → API
 
 ---
