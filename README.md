@@ -101,8 +101,3 @@ Frontend runs on → http://localhost:5173
 
 ---
 
-## Developer
-
-**Nikita**
-B.Tech Computer Science & Design
-MIT Aurangabad
