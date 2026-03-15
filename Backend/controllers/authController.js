@@ -2,7 +2,7 @@ import bcrypt from 'bcryptjs';
 import supabase from '../config/supabaseClient.js';
 import generateToken from '../utils/generateToken.js';
 
-// POST /api/auth/signup
+// POST
 export const signup = async (req, res) => {
   const { name, email, password } = req.body;
 
@@ -60,7 +60,7 @@ export const signup = async (req, res) => {
   }
 };
 
-// POST /api/auth/login
+// POST 
 export const login = async (req, res) => {
   const { email, password } = req.body;
 

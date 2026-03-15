@@ -23,7 +23,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/account', accountRoutes);
 app.get('/api/users', protect, getUsers);
 
-// Health check
+// Test route
 app.get('/', (req, res) => {
   res.json({ message: 'FinTrack API is running ' });
 });

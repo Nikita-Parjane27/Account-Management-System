@@ -1,6 +1,6 @@
 import supabase from '../config/supabaseClient.js';
 
-// GET /api/account/balance
+// GET 
 export const getBalance = async (req, res) => {
   try {
     const { data: user, error } = await supabase
@@ -20,7 +20,7 @@ export const getBalance = async (req, res) => {
   }
 };
 
-// GET /api/account/statement
+// GET 
 export const getStatement = async (req, res) => {
   try {
     const userId = req.user.id;
@@ -57,7 +57,7 @@ export const getStatement = async (req, res) => {
   }
 };
 
-// POST /api/account/transfer
+// POST 
 export const transfer = async (req, res) => {
   const { receiverEmail, amount } = req.body;
   const senderId = req.user.id;
@@ -157,7 +157,7 @@ export const transfer = async (req, res) => {
   }
 };
 
-// GET /api/account/users
+// GET 
 export const getUsers = async (req, res) => {
   const { search } = req.query;
 

@@ -21,7 +21,7 @@ export default function Navbar() {
   <nav className="navbar">
     <div className="navbar-inner">
       <Link to="/dashboard" className="navbar-brand">
-        <div className="navbar-logo">F</div>
+        <div className="navbar-logo">FT</div>
         <span className="navbar-logo-text">FinTrack</span>
       </Link>
       <div className="navbar-links">

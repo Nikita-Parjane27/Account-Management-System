@@ -32,7 +32,7 @@ export default function Signup() {
   <div className="auth-page">
     <div className="auth-card">
       <div className="auth-brand">
-        <div className="auth-logo">F</div>
+        <div className="auth-logo">FT</div>
         <span className="auth-logo-text">FinTrack</span>
       </div>
       <h2 className="auth-title">Create Account</h2>
